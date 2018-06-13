@@ -1,0 +1,37 @@
+.navbar-inverse {
+	background: rgba(0, 0, 0, 0.8);
+}
+
+.top-buffer {
+	margin-top: 7%;
+	padding-top: 15px;
+	border: 1px solid black;
+}
+
+#svg {
+	width: 30px;
+	height: 30px;
+	margin-top: 10px;
+	animation: pound 2s infinite;
+	transform-origin: center;
+}
+
+.form-control-feedback {
+	display: none;
+	margin-right: 20px;
+}
+
+.valid:after {
+	content: '*';
+	color: red;
+}
+
+@keyframes pound {
+	from,
+	to {
+		transform: none;
+	}
+	50% {
+		transform: scale(1.4);
+	}
+}
